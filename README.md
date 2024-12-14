@@ -1,29 +1,58 @@
-# Data_jobs_Analysis
+# Data Jobs Analysis
 
-# ` Dataset MetaData `
+This project analyzes a dataset containing information about data-related job roles, salaries, and other job attributes. Below is the detailed metadata for the dataset.
 
-work_year: The year was paid.
+## Dataset Metadata
 
-experience_level: The experience level in the job during the year with the following possible values: EN Entry-level / Junior MI 
+### **Columns and Descriptions**
 
-Mid-level / Intermediate SE Senior-level / Expert EX Executive-level / Director
+1. **`work_year`**  
+   - The year the salary was paid.
 
-employment_type: The type of employement for the role: PT Part-time FT Full-time CT Contract FL Freelance
+2. **`experience_level`**  
+   - The level of experience required for the role during the given year. Possible values:
+     - **EN**: Entry-level / Junior  
+     - **MI**: Mid-level / Intermediate  
+     - **SE**: Senior-level / Expert  
+     - **EX**: Executive-level / Director  
 
-job_title: The role worked in during the year.
+3. **`employment_type`**  
+   - The type of employment for the role. Possible values:  
+     - **PT**: Part-time  
+     - **FT**: Full-time  
+     - **CT**: Contract  
+     - **FL**: Freelance  
 
-salary: The total gross salary amount paid.
+4. **`job_title`**  
+   - The title of the role worked during the year.
 
-salary_currency: The currency of the salary paid as an ISO 4217 currency code.
+5. **`salary`**  
+   - The total gross salary amount paid in the specified currency.
 
-salary_in_usd: The salary in USD (FX rate divided by avg. USD rate for the respective year via fxdata.foorilla.com).
+6. **`salary_currency`**  
+   - The currency of the salary paid, represented using ISO 4217 currency codes (e.g., USD, EUR).
 
-employee_residence: Employee's primary country of residence in during the work year as an ISO 3166 country code.
+7. **`salary_in_usd`**  
+   - The gross salary converted to USD, adjusted based on the average FX rate for the respective year (via fxdata.foorilla.com).
 
-remote_ratio: The overall amount of work done remotely, possible values are as follows: 0 No remote work (less than 20%) 50 
-Partially remote 100 Fully remote (more than 80%)
+8. **`employee_residence`**  
+   - The employee's primary country of residence during the work year, represented using ISO 3166 country codes (e.g., US, DE).
 
-company_location: The country of the employer's main office or contracting branch as an ISO 3166 country code.
+9. **`remote_ratio`**  
+   - The percentage of work performed remotely. Possible values:  
+     - **0**: No remote work (less than 20%)  
+     - **50**: Partially remote  
+     - **100**: Fully remote (more than 80%)  
 
-company_size: The average number of people that worked for the company during the year: S less than 50 employees (small) M 50 to 
-250 employees (medium) L more than 250 employees (large)
+10. **`company_location`**  
+    - The country of the employer's main office or contracting branch, represented using ISO 3166 country codes.
+
+11. **`company_size`**  
+    - The average size of the company during the year. Possible values:  
+      - **S**: Small (less than 50 employees)  
+      - **M**: Medium (50 to 250 employees)  
+      - **L**: Large (more than 250 employees)  
+
+---
+
+This README provides the necessary details to understand and interpret the dataset, making it a useful resource for data analysis projects.
